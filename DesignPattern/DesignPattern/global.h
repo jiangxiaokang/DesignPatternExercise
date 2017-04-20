@@ -1,0 +1,2 @@
+int showSimpleFactory();
+int showFactorMethod();
