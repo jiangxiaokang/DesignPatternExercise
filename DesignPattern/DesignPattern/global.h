@@ -1,2 +1,2 @@
 int showSimpleFactory();
-int showFactorMethod();
+int showFactoryMethod();

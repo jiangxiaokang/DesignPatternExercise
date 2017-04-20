@@ -11,17 +11,19 @@ int showFactoryMethod()
 {
 	FactoryA fa;
 	FactoryB fb;
-	singleCoreA* sa=fa.CreateSingleCore();
-	singleCoreB* sb=fb.CreateSingleCore();
-	(*sa).show();
-	(*sb).show();
+	singleCore* sa=fa.CreateSingleCore();
+	singleCore* sb=fb.CreateSingleCore();
+	//(*sa).show();
+	//(*sb).show();
+	sa->show();
+	sb->show();
 	return 0;
 }
 int showSimpleFactory()
 {
-	Factory fa;
-	SingleCore* sa=fa.creatSingleCore(CORE_A);
-	SingleCore* sb=fa.creatSingleCore(CORE_B);
+	Factory1 fa;
+	SingleCore1* sa=fa.creatSingleCore(CORE_A);
+	SingleCore1* sb=fa.creatSingleCore(CORE_B);
 	(*sa).show();
 	(*sb).show();
 	return 0;
